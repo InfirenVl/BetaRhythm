@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentQuestion2">
+    tools:context=".FragmentQuestion13">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -35,10 +35,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
-                android:text="Если бы у вас была такая возможность, кем бы вы хотели стать?"
+                android:text="Вам предложили два варианта, либо работать с серверами и «железом», либо
+работать с логикой взаимодействия серверов, что бы вы выбрали?"
                 android:textAlignment="center"
                 android:textColor="@color/background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Вопрос №2"
+                android:text="Вопрос №13"
                 android:textColor="@color/background"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -98,7 +99,7 @@
                         android:drawableLeft="@drawable/radio"
                         android:drawablePadding="10dp"
                         android:padding="16dp"
-                        android:text="Всегда мечтал стать известным ученым и открыть что-то новое "
+                        android:text="Первое, мне нравится искать причины неполадок и исправлять их"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -112,7 +113,7 @@
                         android:drawableLeft="@drawable/radio"
                         android:drawablePadding="10dp"
                         android:padding="16dp"
-                        android:text="Открыл бы своё дело и стал бы бизнесменом"
+                        android:text="Второе, люблю писать сложные алгоритмы"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -126,39 +127,27 @@
                         android:drawableLeft="@drawable/radio"
                         android:drawablePadding="10dp"
                         android:padding="16dp"
-                        android:text="Хочу создавать произведения искусства, чтобы на мои работы смотрели в Эрмитаже"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
-
-                    <RadioButton
-                        android:id="@+id/radioButton4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="15dp"
-                        android:background="@drawable/answer_background"
-                        android:button="none"
-                        android:drawableLeft="@drawable/radio"
-                        android:drawablePadding="10dp"
-                        android:padding="16dp"
-                        android:text="Если бы у меня такая была возможность, то я бы ходил по тусовкам и общался с
-людьми"
+                        android:text="Лучше откажусь, мне это не интересно"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
                 </RadioGroup>
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/button_solid"
-                    android:textAllCaps="false"
-                    android:text="Далее"
-                    android:textColor="@color/background"
-                    android:textSize="16sp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="20dp"/>
+
             </LinearLayout>
         </ScrollView>
 
-
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_solid"
+            android:text="Далее"
+            android:textAllCaps="false"
+            android:textColor="@color/background"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="20dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>
