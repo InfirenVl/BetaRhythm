@@ -11,7 +11,7 @@ class RecViewList{
         RecViewData(R.drawable.sysadmin, "Системный Администратор"),
         RecViewData(R.drawable.tester, "Тестировщик"),
         RecViewData(R.drawable.ui_ux_designer, "UI/UX-Дизайнер"),
-        RecViewData(R.drawable.backend_developer, "Fullstack-Разработчик"),
-        RecViewData(R.drawable.backend_developer, "Web-Дизайнер")
+        RecViewData(R.drawable.fullstack_developer, "Fullstack-Разработчик"),
+        RecViewData(R.drawable.web_designer, "Web-Дизайнер")
     )
 }
