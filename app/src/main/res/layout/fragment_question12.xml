@@ -97,7 +97,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="15dp"
                         android:background="@drawable/answer_background"
-                        android:button="none"
+                        android:button="@color/accent"
                         android:drawableLeft="@drawable/radio"
                         android:drawablePadding="10dp"
                         android:padding="16dp"
@@ -111,7 +111,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="15dp"
                         android:background="@drawable/answer_background"
-                        android:button="none"
+                        android:button="@color/accent"
                         android:drawableLeft="@drawable/radio"
                         android:drawablePadding="10dp"
                         android:padding="16dp"
@@ -125,7 +125,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="15dp"
                         android:background="@drawable/answer_background"
-                        android:button="none"
+                        android:button="@color/accent"
                         android:drawableLeft="@drawable/radio"
                         android:drawablePadding="10dp"
                         android:padding="16dp"
@@ -133,22 +133,19 @@
                         android:textColor="@color/black"
                         android:textSize="14sp" />
                 </RadioGroup>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_solid"
+                    android:text="Далее"
+                    android:textAllCaps="false"
+                    android:textColor="@color/background"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
 
             </LinearLayout>
         </ScrollView>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_solid"
-            android:text="Далее"
-            android:textAllCaps="false"
-            android:textColor="@color/background"
-            android:textSize="16sp"
-            android:layout_marginBottom="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
