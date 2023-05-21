@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun start(view: View){
-        val intent = Intent(this@MainActivity, TestFragment::class.java)
+        val intent = Intent(this@MainActivity, TestActivity::class.java)
         startActivity(intent)
         finish()
     }
