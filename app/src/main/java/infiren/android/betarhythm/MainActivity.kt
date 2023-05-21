@@ -17,4 +17,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
+    fun goToJobs(view: View) {
+        val intent = Intent(this@MainActivity, JobsActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
 }

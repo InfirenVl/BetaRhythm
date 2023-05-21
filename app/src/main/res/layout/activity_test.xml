@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestActivity">
+    tools:context=".TestActivity"
+    android:background="@color/background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/plate"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="260dp"
+        android:paddingHorizontal="15dp"
         android:background="@drawable/question_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +37,7 @@
             android:text="Какие уроки вы предпочитали в школе?"
             android:textAlignment="center"
             android:textColor="@color/background"
-            android:textSize="24sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +71,7 @@
         android:name="infiren.android.betarhythm.TestFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

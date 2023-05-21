@@ -119,7 +119,7 @@ class TestActivity : AppCompatActivity() {
         val quest = findViewById<TextView>(R.id.question)
 
         header.setText("Вопрос №3")
-        quest.setText("Любите ли вы играть в\\n  компьютерные игры?  ")
+        quest.setText("Любите ли вы играть в компьютерные игры?  ")
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, FragmentQuestion3())
