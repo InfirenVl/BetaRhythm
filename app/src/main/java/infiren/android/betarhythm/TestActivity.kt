@@ -267,7 +267,10 @@ class TestActivity : AppCompatActivity() {
         transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
         transaction.add(R.id.fragment_container, Question.QUESTION_1.creator.invoke(), "First qwestion")
         transaction.commit()
+
+
     }
+
     fun home(view: View) {
         val intent = Intent(this@TestActivity, MainActivity::class.java)
         startActivity(intent)
@@ -275,8 +278,6 @@ class TestActivity : AppCompatActivity() {
     }
 
     fun end_test(view: View) {
-        val results = listOf(backEndDev, fullStackDev, gameDev, mobileDev, uxUiDesigner, gameDesigner, graphDesigner, webDesigner, qaTester, systemAdmin)
-        job = results.max()
         val intent = Intent(this@TestActivity, ResultActivity::class.java)
         startActivity(intent)
         finish()

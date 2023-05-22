@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         webDesigner= 0
         qaTester= 0
         systemAdmin= 0
+        job = 0
         val intent = Intent(this@MainActivity, TestActivity::class.java)
         startActivity(intent)
         finish()
