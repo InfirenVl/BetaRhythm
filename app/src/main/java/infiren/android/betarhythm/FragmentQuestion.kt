@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioGroup
 import androidx.appcompat.widget.AppCompatButton
+import androidx.appcompat.widget.AppCompatImageButton
 import androidx.fragment.app.Fragment
 import kotlin.reflect.KClass
 
@@ -21,6 +22,7 @@ class FragmentQuestion(private val layoutId: Int,
     var radioGroup : RadioGroup? = null
 
     var nextButton: AppCompatButton? = null
+    lateinit var homeButton: AppCompatImageButton
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -29,7 +31,13 @@ class FragmentQuestion(private val layoutId: Int,
         val rootView = inflater.inflate(layoutId, container, false)
         radioGroup = rootView.findViewById(R.id.radio_group)
         nextButton = rootView.findViewById(R.id.next)
+        homeButton = rootView.findViewById(R.id.home)
 
+        homeButton.setOnClickListener{
+            val intent = Intent(activity, MainActivity::class.java)
+            startActivity(intent)
+
+        }
         nextButton?.setOnClickListener{
             var idIndex = radioGroup!!.indexOfChild(rootView.findViewById(radioGroup!!.checkedRadioButtonId))
             when (idIndex){
@@ -49,5 +57,10 @@ class FragmentQuestion(private val layoutId: Int,
 
         }
         return  rootView
+    }
+    companion object {
+
+        @JvmStatic
+        fun newInstance() = Question.QUESTION_1.creator.invoke()
     }
 }

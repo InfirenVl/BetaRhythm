@@ -288,22 +288,11 @@ class TestActivity : AppCompatActivity() {
         Log.d("RADIOINDEX", "Web" +webDesigner.toString())
         Log.d("RADIOINDEX", "QA" +qaTester.toString())
         Log.d("RADIOINDEX", "System" + systemAdmin.toString())
-        val results = listOf(backEndDev, fullStackDev, gameDev, mobileDev, uxUiDesigner, gameDesigner, graphDesigner, webDesigner, qaTester, systemAdmin)
-        Log.d("RADIO", "Result is $results")
-        job = results.max()
-//        when (job){
-//            backEndDev -> "You are back"
-//            fullStackDev -> "You are fullstack"
-//            gameDev -> "You are gameDev"
-//             mobileDev -> "You are mobile"
-//            uxUiDesigner -> "You are UxUi"
-//            gameDesigner ->  "You are gameDes"
-//            graphDesigner -> "You are graph"
-//            webDesigner -> "You are web"
-//            qaTester -> "You are qa"
-//            systemAdmin -> "You are admin"
-//        }
-        Log.d("RADIO", "Result is $job")
+
+        //Log.d("RADIO", "Result is $results")
+        //job = results.max()
+
+        //Log.d("RADIO", "Result is $job")
         val intent = Intent(this@TestActivity, ResultActivity::class.java)
         startActivity(intent)
         finish()
