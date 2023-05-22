@@ -13,6 +13,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun start(view: View){
+        backEndDev = 0
+        fullStackDev = 0
+        gameDev = 0
+        mobileDev = 0
+        uxUiDesigner= 0
+        gameDesigner = 0
+        graphDesigner = 0
+        webDesigner= 0
+        qaTester= 0
+        systemAdmin= 0
         val intent = Intent(this@MainActivity, TestActivity::class.java)
         startActivity(intent)
         finish()
