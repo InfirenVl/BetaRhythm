@@ -134,23 +134,19 @@
                         android:textColor="@color/black"
                         android:textSize="14sp" />
                 </RadioGroup>
-
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/next"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_solid"
+                    android:text="Далее"
+                    android:textAllCaps="false"
+                    android:textColor="@color/background"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
             </LinearLayout>
         </ScrollView>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/next"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_solid"
-            android:text="Далее"
-            android:textAllCaps="false"
-            android:textColor="@color/background"
-            android:textSize="16sp"
-            android:layout_marginBottom="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

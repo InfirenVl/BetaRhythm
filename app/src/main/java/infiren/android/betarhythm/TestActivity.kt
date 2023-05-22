@@ -267,10 +267,7 @@ class TestActivity : AppCompatActivity() {
         transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
         transaction.add(R.id.fragment_container, Question.QUESTION_1.creator.invoke(), "First qwestion")
         transaction.commit()
-
-
     }
-
     fun home(view: View) {
         val intent = Intent(this@TestActivity, MainActivity::class.java)
         startActivity(intent)
@@ -278,32 +275,8 @@ class TestActivity : AppCompatActivity() {
     }
 
     fun end_test(view: View) {
-        Log.d("RADIOINDEX", "Beck" +backEndDev.toString())
-        Log.d("RADIOINDEX", "Full" +fullStackDev.toString())
-        Log.d("RADIOINDEX", "GameDev" +gameDev.toString())
-        Log.d("RADIOINDEX", "Mobile" +mobileDev.toString())
-        Log.d("RADIOINDEX", "UxUi" +uxUiDesigner.toString())
-        Log.d("RADIOINDEX", "GameDes" +gameDesigner.toString())
-        Log.d("RADIOINDEX", "Graph" +graphDesigner.toString())
-        Log.d("RADIOINDEX", "Web" +webDesigner.toString())
-        Log.d("RADIOINDEX", "QA" +qaTester.toString())
-        Log.d("RADIOINDEX", "System" + systemAdmin.toString())
         val results = listOf(backEndDev, fullStackDev, gameDev, mobileDev, uxUiDesigner, gameDesigner, graphDesigner, webDesigner, qaTester, systemAdmin)
-        Log.d("RADIO", "Result is $results")
         job = results.max()
-//        when (job){
-//            backEndDev -> "You are back"
-//            fullStackDev -> "You are fullstack"
-//            gameDev -> "You are gameDev"
-//             mobileDev -> "You are mobile"
-//            uxUiDesigner -> "You are UxUi"
-//            gameDesigner ->  "You are gameDes"
-//            graphDesigner -> "You are graph"
-//            webDesigner -> "You are web"
-//            qaTester -> "You are qa"
-//            systemAdmin -> "You are admin"
-//        }
-        Log.d("RADIO", "Result is $job")
         val intent = Intent(this@TestActivity, ResultActivity::class.java)
         startActivity(intent)
         finish()
