@@ -31,7 +31,7 @@ class FragmentQuestion(private val layoutId: Int,
         val rootView = inflater.inflate(layoutId, container, false)
         radioGroup = rootView.findViewById(R.id.radio_group)
         nextButton = rootView.findViewById(R.id.next)
-        homeButton = rootView.findViewById(R.id.home)
+
 
         nextButton?.isEnabled = false
         radioGroup?.setOnCheckedChangeListener { radioGroup, optionId ->
@@ -40,12 +40,6 @@ class FragmentQuestion(private val layoutId: Int,
             }
         }
 
-
-        homeButton.setOnClickListener{
-            val intent = Intent(activity, MainActivity::class.java)
-            startActivity(intent)
-
-        }
         nextButton?.setOnClickListener{
             var idIndex = radioGroup!!.indexOfChild(rootView.findViewById(radioGroup!!.checkedRadioButtonId))
             when (idIndex){
