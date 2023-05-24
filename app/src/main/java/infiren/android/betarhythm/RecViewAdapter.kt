@@ -1,28 +1,37 @@
 package infiren.android.betarhythm
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import infiren.android.betarhythm.fragments.JobsDescFragment
 
-    val con:Context = this
+var positionIndex : Int = -1
+var inProgress : Int = 0
 
-class RecViewAdapter(, val list2:ArrayList<RecViewData>):RecyclerView.Adapter<RecViewAdapter.Link>() {
+class RecViewAdapter(val con:Context, val list2:ArrayList<RecViewData>):RecyclerView.Adapter<RecViewAdapter.Link>() {
 
-    class Link(itemView: View):RecyclerView.ViewHolder(itemView) {
-        init {
-            itemView.setOnClickListener(View.OnClickListener(){
-                fun onClick(view : View){
-                    var positionIndex : Int = adapterPosition
-                    Toast.makeText(,"Element " + positionIndex, Toast.LENGTH_SHORT ).show()
+    open class Link(itemView: View):RecyclerView.ViewHolder(itemView) {
+            init {
 
-                }
-            })
-        }
+                    val ctx : Context = itemView.context
+                    itemView.setOnClickListener {
+                        positionIndex = adapterPosition
+                        val intent = Intent(ctx, JobsDescriptionActivity::class.java)
+                        Log.d("RECID", "Element $positionIndex")
+                        inProgress++
+                        ctx.startActivity(intent)
+                    }
+
+            }
+
 
         val img:ImageView=itemView.findViewById(R.id.img)
         val text:TextView=itemView.findViewById(R.id.text)
