@@ -35,10 +35,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rec_view"
+        android:onClick="about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
         android:paddingBottom="90dp"
+        android:clickable="true"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"

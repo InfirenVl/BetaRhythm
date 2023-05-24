@@ -19,4 +19,8 @@ class JobsActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+//    fun about(view: View){
+//        var recId : RecyclerView = findViewById(R.id.rec_view)
+//        recId.indexOfChild(clickedChildView)
+//    }
 }
